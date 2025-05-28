@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <!-- Header with profile image, logo, hamburger menu, and navigation links -->
+<header class="header">
+    <div class="navbar-profile-pic">
+        <img src="user/profile.jpg.jpg" alt="Profile" />
+    </div>
+    <a href="" class="logo">John Paulo <span>Nuñez</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="mission.html">Mission</a>
+        <a href="testimonials.html" class="active">Testimonials</a>
+        <a href="Gallary.html">Gallary</a>
+        <a href="contact.html">Contact</a>
+        <a href="News.html">News</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+<!--section for the testimonial-->
+<section class="testimonials" id="testimonials">
+    <h2 class="heading">Testimonials</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-item" >
+            <h3>Charmaine</h3>
+            <img src="img/client2.jpg" alt="Testimonial 1" class="testimonial-img">
+        </div>
+        <div class="testimonial-item">
+            <h3>Joy</h3>
+            <img src="img/client3.jpg" alt="Testimonial 2" class="testimonial-img">
+        </div>
+        <div class="testimonial-item">
+            <h3>Joy</h3>
+            <img src="img/client4.jpg" alt="Testimonial 3" class="testimonial-img">
+        </div>
+        <div class="testimonial-item">
+            <h3>Eddieson</h3>
+            <img src="img/client5.jpg" alt="Testimonial 4" class="testimonial-img">
+        </div>
+    </div>
+</section>
+<!-- Modal for displaying clicked image -->
+<div id="img-modal" class="img-modal">
+    <!-- Close button for modal -->
+    <span class="img-modal-close" id="img-modal-close">&times;</span>
+    <!-- Modal image content -->
+    <img class="img-modal-content" id="img-modal-content">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
