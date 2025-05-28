@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Header section with profile picture, logo, and navigation links -->
+<header class="header">
+    <!-- Profile image in the navigation bar -->
+    <div class="navbar-profile-pic">
+        <img src="user/profile.jpg.jpg" alt="Profile" />
+    </div>
+    <a href="" class="logo">John Paulo <span>Nuñez</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <!-- Navigation bar with links to different pages -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="mission.html">Mission</a>
+        <a href="testimonials.html" >Testimonials</a>
+        <a href="Gallary.html" class="active">Gallary</a>
+        <a href="contact.html">Contact</a>
+        <a href="News.html">News</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<!-- Gallery section using the testimonials layout for sample projects -->
+<section class="testimonials" id="testimonials">
+    <h2 class="heading">Gallery</h2>
+    <h3>Sample project</h3>
+    <!-- Grid container for each gallery item (uses testimonial-item for styling) -->
+    <div class="testimonials-grid">
+        <!-- Each testimonial-item here represents a gallery entry 
+             and uses data-images attribute to store an array of image URLs for modal navigation -->
+        <div class="testimonial-item"
+            data-images='["img/artboard 1-01.jpg", "img/wizard.jpg"]'>
+            <h3>Logo Design</h3>
+            <!-- Thumbnail shown on the grid -->
+            <img src="img/artboard 1-01.jpg" alt="Logo Design">
+        </div>
+        <div class="testimonial-item"
+            data-images='["img/3D Logo Mockup on Glass Wall - PHOTOPEA.jpg", "img/mockup2.jpg"]'>
+            <h3>3D Mockup</h3>
+            <img src="img/3D Logo Mockup on Glass Wall - PHOTOPEA.jpg" alt="3D Mockup">
+        </div>
+        <div class="testimonial-item"
+            data-images='["img/art3.jpg", "img/art4.jpg", "img/art1.jpg", "img/art2.jpg", "img/art5.jpg"]'>
+            <h3>Portrait</h3>
+            <img src="img/art3.jpg" alt="Art">
+        </div>
+        <div class="testimonial-item"
+            data-images='["img/POSTER-01.jpg", "img/fanta.jpg"]'>
+            <h3>Product Manipulation</h3>
+            <img src="img/POSTER-01.jpg" alt="Poster Design">
+        </div>
+    </div>
+</section>
+
+<!-- Modal for displaying images in a larger view with navigation buttons -->
+<div id="img-modal" class="img-modal">
+    <!-- Close button for modal -->
+    <span class="img-modal-close" id="img-modal-close">&times;</span>
+    <!-- Previous image navigation button -->
+    <button id="img-modal-prev" class="img-modal-nav">&#8592;</button>
+    <!-- Area where modal image is displayed -->
+    <img class="img-modal-content" id="img-modal-content">
+    <!-- Next image navigation button -->
+    <button id="img-modal-next" class="img-modal-nav">&#8594;</button>
+</div>
+
+<!-- Link to external JavaScript file for modal, menu, and image gallery interactivity -->
+<script src="script.js"></script>
+</body>
+</html>
